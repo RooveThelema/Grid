@@ -6,7 +6,7 @@
     <title>Grid</title>
     <meta name="description" content="Каталог и галерея макетов на основе Grid">
     <meta name="keywords" content="grid, css, html, mockups, gallery">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,7 +18,10 @@
                 <a href="#" class="logo">
                     <img src="img/logo.png" alt="Logo" width="44" height="44">
                 </a>
-                <nav class="nav">
+                <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false" aria-controls="site-nav" hidden>
+                    <span class="nav-toggle__icon" aria-hidden="true"></span>
+                </button>
+                <nav class="nav" id="site-nav">
                     <a href="#" class="nav__link">About</a>
                     <a href="#" class="nav__link">Training</a>
                     <a href="#" class="nav__link">Promotions</a>
@@ -175,7 +178,7 @@
                     </div>
                 </div>
                 <!--форма подписки-->
-                <div class="footer__col">
+                <div class="footer__col footer__subscription">
                     <p class="footer__title" ><b>Subscribe</b> </p>
                     <form class="footer__form">
                         <input type="email" placeholder="Get product updates" class="footer__input" required>
@@ -219,5 +222,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
